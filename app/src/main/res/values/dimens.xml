@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font">12sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_normal_big">16sp</dimen>
+    <dimen name="font_big">15sp</dimen>
+    <dimen name="font_title">17sp</dimen>
+    <dimen name="font_bigger">18sp</dimen>
+    <dimen name="font_biggest">24sp</dimen>
+    <dimen name="font_small">8dp</dimen>
+    <dimen name="font_smaller">6dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_big">12dp</dimen>
+    <dimen name="margin_bigger">16dp</dimen>
+    <dimen name="margin_biggest">24dp</dimen>
+    <dimen name="margin_enormous">64dp</dimen>
+    <dimen name="margin_huge">32dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_smaller">4dp</dimen>
+    <dimen name="margin_smallest">2dp</dimen>
+</resources>

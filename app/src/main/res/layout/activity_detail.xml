@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_bigger"
+            android:text="@string/no_flights"
+            android:visibility="gone"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingTop="@dimen/margin">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/DetailInfoText"
+                android:textSize="@dimen/font_biggest"
+                tools:text="@string/app_name"
+                android:layout_marginBottom="@dimen/margin_big"/>
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="centerInside"/>
+
+            <ImageView
+                android:id="@+id/iv_success"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toEndOf="@+id/iv_image"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+                android:layout_margin="@dimen/margin"
+                android:src="@drawable/ic_action_success"/>
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/DetailInfoText"
+                tools:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_launch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_year"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/DetailInfoText"
+                tools:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/DetailInfoText"
+                android:layout_marginBottom="@dimen/margin_big"
+                tools:text="@string/app_name"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

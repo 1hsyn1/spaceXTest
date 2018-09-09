@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="cancel">İptal</string>
+    <string name="fligh_info">%1$s - %2$s</string>
+    <string name="general_error">Bir hata oluştu lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="launched">Launched at %1$s</string>
+    <string name="no">Hayır</string>
+    <string name="no_connection">Lütfen internet bağlantınızı kontrol ediniz.</string>
+    <string name="no_flights">Uçuş bulunamadı</string>
+    <string name="ok">Tamam</string>
+    <string name="warning">Uyarı</string>
+</resources>
